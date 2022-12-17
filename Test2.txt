@@ -1,0 +1,18 @@
+Imagine a New Source of Truth
+
+Learning Objectives
+After completing this unit, you’ll be able to:
+Describe how the models for change set and org development differ from modular package development.
+List the advantages of package development.
+Describe the key characteristics of a package.
+All the World's an Org
+A famous thespian, or perhaps it was a Salesforce visionary, once said, “All the world’s an org.” Traditionally, the center of this world has been your production org, and you’ve performed much of your development within the confines of a sandbox or production org. (If you are an AppExchange partner, your world is a bit different. However, the tools introduced in this unit are available to you too, so read on.)
+
+How You’ve Traditionally Managed Change
+If you completed the Application Lifecycle and Development Models module, you might remember Calvin Green, the admin for Zephyrus Relocation Services. As Zephyrus grew, so did the complexity of its production org. To manage this increasing change, he adopted a sound application management lifecycle and used change sets to release new features, customizations, and apps to production. A change set is a release artifact that moves the diffs from one org to another. Calvin first adopted Declarative Change Set Development, and then he led the move to Programmatic Change Set Development.
+
+Let’s look at how your development team might work in change set development model.
+
+You are a development lead for a fast-paced high-tech company. For your release, you need to customize the core CRM app and you also want to build an internal application for your company. Your first step in development is to make sure that you get the most up-to-date snapshot of your production org. In the org-based model, your production org is the source of truth for all your code, configuration, and customizations.
+
+Regardless of what you’re building, you ultimately create deployments that are scoped to your production org. As you see in the diagram, even if you have multiple teams working on separate development projects, they develop and release their updates with the same deployment. Everything goes into one package.xml .
